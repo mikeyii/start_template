@@ -1,0 +1,26 @@
+@import "~bootstrap/scss/bootstrap-reboot"
+
+@import "vars"
+@import "mixins/vr/vr-main"
+$unit: $distance-m
+
+$grid-gutter-width: $unit * 2
+$container-max-widths: (sm: $unit * 40, md: $unit * 50,lg: $unit * 70,xl: $unit * 80)
+
+@import "~bootstrap/scss/bootstrap-grid"
+
+*,*:after,*:before
+  box-sizing: border-box
+
+body
+  color: $dark
+  min-width: 320px
+  overflow-x: hidden
+  opacity: 1
+  background-color: transparent
+
+
+a
+  color: $cyan
+  &:hover,&:focus
+    color: darken($cyan, 5%)
